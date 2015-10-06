@@ -3,7 +3,7 @@
 #include "pin.H"
 
 KNOB<std::string> knob_outfile(KNOB_MODE_WRITEONCE, "pintool",
-        "o", "pagetrace.out", "specify output file name");
+        "o", "/tmp/pagetrace.out", "specify output file name");
 
 std::ofstream outfile;
 const int page_order = 12;
